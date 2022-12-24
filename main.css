@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+   
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+.container{
+    background: rgb(114, 114, 226);
+    box-shadow: 0px 0px 30px black;
+    padding: 20px;
+}
+.dark-mode{
+    background: black;
+}
+.screen{
+    border:rgb(123, 15, 116) 3px dashed;
+}
+table{
+    width: 100%;
+    margin: 20px 0px;
+ }
+ 
+ table tr,td{
+    padding: 7px;
+ }
+button{
+    width: 40px;
+    height: 40px;
+    border-radius: 60%;
+    border: none;
+    font-size: 20px;
+}
+input{
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    color: black;
+}
+.num{
+    background: violet;
+}
+.deux{
+    font-size: 24px;
+    background: rgb(200, 23, 209);
+}
+#equal{
+    width: 100px;
+    border-radius: 20%;
+}
+td:hover{
+    transform: scale(1.1);
+}

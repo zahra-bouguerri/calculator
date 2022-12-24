@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="dark" >
+            <input type="checkbox" onclick="dark()">
+
+        </div>
+        <div class="screen">
+            <input type="text" id="result" disabled>
+        </div>
+        <div class="buttons">
+            <table>
+                <tr>
+                    <td><button class="deux" onclick="Clear()">C</button></td>
+                    <td><button class="premier" onclick="Delete()">D</button></td>
+                    <td><button class="operation" onclick="show('*0.01')">%</button></td>
+                    <td><button class="operation" onclick="show('/')">&divide;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="num" onclick="show('7')">7</button></td>
+                    <td><button class="num" onclick="show('8')">8</button></td>
+                    <td><button class="num" onclick="show('9')">9</button></td>
+                    <td><button class="operation" onclick="show('*')">&times;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="num" onclick="show('4')">4</button></td>
+                    <td><button class="num" onclick="show('5')">5</button></td>
+                    <td><button class="num" onclick="show('6')">6</button></td>
+                    <td><button class="operation" onclick="show('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="num" onclick="show('1')">1</button></td>
+                    <td><button class="num" onclick="show('2')">2</button></td>
+                    <td><button class="num" onclick="show('3')">3</button></td>
+                    <td><button class="operation" onclick="show('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="operation" onclick="show('.')">.</button></td>
+                    <td><button class="num" onclick="show('0')">0</button></td>
+                    <td colspan="2"><button class="deux"  id="equal" onclick="calcul()">=</button></td>
+                </tr>
+            </table>
+        </div>
+       </div> 
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
